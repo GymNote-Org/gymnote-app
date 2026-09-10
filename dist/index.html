@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#151714">
+    <meta name="description" content="매일 쌓이는 나의 움직임. 로그인 없이 세트, 중량, 반복 횟수를 기록하고 운동 볼륨을 확인하세요.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>GYMNOTE — 나의 운동 기록</title>
+    <link rel="icon" href="./icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./icons/icon-192.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <div id="app"><div class="loading">GYMNOTE<span>운동 기록을 불러오고 있어요.</span></div></div>
+    <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <noscript>운동 기록을 저장하려면 브라우저에서 JavaScript를 허용해 주세요.</noscript>
+  </body>
+</html>
