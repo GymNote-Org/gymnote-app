@@ -1,4 +1,4 @@
-const CACHE = 'gymnote-static-v1-20260910';
+const CACHE = 'gymnote-static-v2-blue-lime-20260910';
 const ASSETS = ['./', './index.html', './style.css', './responsive.css', './app.js', './model.js', './storage.js', './webmcp.js', './manifest.webmanifest', './icon.svg', './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
