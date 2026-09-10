@@ -1,6 +1,36 @@
+# Operating system files
 .DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Dependencies and package manager logs
 node_modules/
+*.log
+
+# Local credentials and environment variables
 .env
 .env.*
 !.env.example
-*.log
+!.env.*.example
+
+# Local Sites deployment metadata
+.openai/
+
+# Editor and temporary files
+.idea/
+*.swp
+*.swo
+*~
+.cache/
+.tmp/
+tmp/
+*.tsbuildinfo
+
+# Generated test reports
+coverage/
+playwright-report/
+test-results/
+
+# dist/ contains the authored app, not disposable build output.
+# Keep it tracked for local use and GitHub Pages deployment.
